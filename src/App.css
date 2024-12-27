@@ -1,0 +1,45 @@
+.greeting-text {
+  font-family: "Arial";
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.image-container-small {
+  position: relative;
+  width: 28%;
+  height: 370px;
+  perspective: 1000px; /* Enable 3D rotation */
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-container-small.rotate {
+  transform: rotateY(-45deg); /* Rotate smoothly */
+}
+
+.image-background-small, .image-foreground-small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-background, .image-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-background {
+  z-index: 1;
+}
+
+.image-foreground, .image-foreground-small {
+  z-index: 2;
+}
