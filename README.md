@@ -10,3 +10,7 @@ To run this project on your computer, follow the below steps:
   - react (v18 or above)
   - react-icons
   - tailwind css (visit the official website to install tailwind for Vite as this project was created as a vite project)
+
+Or,
+
+You can simply visit the deployed application from the "About" section of this repository
